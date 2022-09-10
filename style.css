@@ -5,16 +5,26 @@
     font-family: 'Roboto', Arial;
 }
 
+body{
+    margin-bottom: 3000px;
+}
+
+
+
+
+
 
 .main-header{
     height: 100px;
-    background-color: rgb(100, 100, 100);
+    background-color: rgb(77, 156, 131);
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.23);
 }
+
+
 
 .brand-logo{
     font-size: 40px;
@@ -39,6 +49,7 @@
 
 .navbar-menu li{
     display: inline;
+
   
 }
 
@@ -51,43 +62,60 @@
     
 }
 
+.video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.7;
+    top: 25px
+}
+
+.overlay
+{
+  position: absolute;
+  width: 100%;
+  height: 81%;
+  background: linear-gradient(to right, rgb(102, 82, 255) , rgb(255, 255, 255));
+  mix-blend-mode: overlay;
+  bottom: 43px;
+ 
+}
+
 
 .top-section{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 100px 0px 0 80px;  
+    margin: 100px 0px 0 80px; 
+    position: absolute;
+    z-index: 200;
+    color: white; 
+    
     
 }
-
-
-
-
- .photos{
-      width: 85%;
-      box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.2);
-      border-radius: 5px;
-      
-}
-
 
 
 .left-text-side h5{
     font-size: 20px;
     font-weight: 400;
+     
+  
 }
 
 
 .left-text-side h1{
     font-size: 60px;
-    font-weight: 500;
+    font-weight: 900;
     margin: 20px 0 20px 0; 
-       
+    font-family: 'Poppins', sans-serif;
+    
+   
 }
 
 
 
 .left-text-side{
-    margin-top: 50px;
+    margin-top: 30px;
     
     
 }
@@ -105,12 +133,74 @@
     font-size: 18px;
     font-weight: 500;
     margin-top: 20px;
-    background-color: black;
+    background-color: rgb(238, 62, 62);
     color: white;
     padding: 15px;
+    border: none;
     border-radius: 7px;
     box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.2);
 }
 .left-text-side .buttom1{
     margin-right: 10px;
 }
+
+
+
+.middel-part{
+    position: absolute;
+    bottom: -450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(77, 156, 131);
+    padding: 35px 0 20px 50px;
+}
+
+
+
+.photos{
+    width: 85%;
+    box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    bottom: -100px;
+    margin-left: 50px;
+
+}
+
+.middel-text-part h5{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.middel-text-part  h1{
+    font-size: 60px;
+    font-weight: 500;
+    margin: 20px 0 20px 0; 
+       
+}
+
+
+
+.middel-text-part p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    
+}
+
+
+.middel-text-part button {
+    margin-top: 20px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+.middel-text-part button a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+ 
