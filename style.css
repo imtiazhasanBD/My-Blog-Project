@@ -16,12 +16,12 @@ body{
 
 .main-header{
     height: 100px;
-    background-color: rgb(77, 156, 131);
+    background-color: rgb(29, 29, 29);
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.23);
+    
 }
 
 
@@ -66,9 +66,9 @@ body{
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: 1;
-    opacity: 0.7;
-    top: 25px
+    opacity: 0.3;
+    top: 0;
+    right: 0;
 }
 
 .overlay
@@ -76,9 +76,9 @@ body{
   position: absolute;
   width: 100%;
   height: 81%;
-  background: linear-gradient(to right, rgb(102, 82, 255) , rgb(255, 255, 255));
+  background: linear-gradient(to right, rgb(4, 12, 255) , rgb(255, 255, 255));
   mix-blend-mode: overlay;
-  bottom: 43px;
+  bottom: 70px;
  
 }
 
@@ -88,7 +88,6 @@ body{
     grid-template-columns: 1fr 1fr;
     margin: 100px 0px 0 80px; 
     position: absolute;
-    z-index: 200;
     color: white; 
     
     
@@ -146,13 +145,23 @@ body{
 
 
 
+.main-container{
+    position: relative;
+    margin-top: 572px;
+    background-image: url(photos/Bangladesh-1536x1024.webp);
+    
+
+}
+
+
+
 .middel-part{
-    position: absolute;
-    bottom: -450px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: rgb(77, 156, 131);
-    padding: 35px 0 20px 50px;
+    padding: 20px 0 50px 50px;
+    background-color: rgb(242, 247, 255);
+    opacity: 0.9;
+
 }
 
 
@@ -163,6 +172,7 @@ body{
     border-radius: 5px;
     bottom: -100px;
     margin-left: 50px;
+    
 
 }
 
@@ -172,10 +182,10 @@ body{
 }
 
 .middel-text-part  h1{
-    font-size: 60px;
-    font-weight: 500;
+    font-size: 48px;
+    font-weight: 900;
     margin: 20px 0 20px 0; 
-       
+         
 }
 
 
@@ -204,3 +214,63 @@ body{
     font-weight: 500;
 }
  
+
+
+
+.middel-map-part {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 0 20px 50px;
+    border-top: 4px solid black;
+    background-color: rgb(242, 247, 255);
+    opacity: 0.9;
+
+}
+
+
+
+
+
+
+
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 40px;
+    border-top: 5px solid black;
+    padding:  190px 40px 180px;  
+    background-color: rgb(242, 247, 255);
+    opacity: 0.9;
+ 
+   
+
+
+}
+
+
+
+.image img {
+    width: 100%;
+    
+}
+
+
+.card{
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    background-color: rgb(187, 114, 150);
+  
+    
+}
+
+.card:hover {
+    transform: scale(1.20);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
+  .card {
+    transition: 0.5s ease;
+    cursor: pointer;
+    
+  }
